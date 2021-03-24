@@ -27,7 +27,19 @@ void showMenu() {}
 void getInput() {}
 
 // Kabir please commit your code here
-void insertData(int start, int limit) {}
+void insertData(int start, int limit) {
+ for (int i = start; i < limit; ++i) {
+        printf("\tPlease enter the value of your %d note: ", i + 1);
+        scanf("%d", &walletAry[i]);
+    }
+
+    arySize = limit;
+    isAryDefined = true;
+
+    printf("Your notes has been stored successfully.\n what would you like to do next?\n");
+
+    showMenu();
+}
 
 // Shakil commit here
 void showWallet() {}
