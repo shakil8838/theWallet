@@ -21,7 +21,37 @@ int main() {
 }
 
 // Saif please commit your code here
-void showMenu() {}
+void showMenu() {
+int theInput = 0;
+
+    printf("\n\n\tAdd to wallet\t\t-> 1");
+    printf("\n\tMy Wallet \t\t-> 2");
+    printf("\n\tSpend from wallet  \t-> 3");
+    printf("\n\tExit  \t\t\t-> 4\n\n");
+
+    printf("Enter your choice : ");
+    scanf("%d", &theInput);
+
+    switch (theInput) {
+
+        case 1:
+            getInput();
+            break;
+        case 2:
+            showWallet();
+            break;
+        case 3:
+            spend();
+            break;
+        case 4:
+            break;
+        default:
+            printf("Invalid input! if you want to exit please press 4\n\n");
+            showMenu();
+            break;
+
+    }
+}
 
 // Riaz please commit your code here
 void getInput() {
