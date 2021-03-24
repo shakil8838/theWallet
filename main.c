@@ -24,7 +24,27 @@ int main() {
 void showMenu() {}
 
 // Riaz please commit your code here
-void getInput() {}
+void getInput() {
+
+    int limit;
+
+    if (isAryDefined) {
+        printf("\nAdd to wallet\n");
+        printf("-------------\n");
+        printf("How much more notes you want to store in? ");
+        scanf("%d", &limit);
+
+        insertData(arySize, arySize + limit);
+    } else {
+        printf("\nAdd to wallet\n");
+        printf("-------------\n");
+        printf("Please enter the number of note you want to put in: ");
+        scanf("%d", &arySize);
+
+        insertData(0, arySize);
+    }
+
+}
 
 // Kabir please commit your code here
 void insertData(int start, int limit) {
