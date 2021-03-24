@@ -92,7 +92,66 @@ void insertData(int start, int limit) {
 }
 
 // Shakil commit here
-void showWallet() {}
+void showWallet() {
+    for (int i = 0; i < arySize; ++i) {
+        for (int j = i + 1; j < arySize; ++j) {
+            if (walletAry[i] > walletAry[j]) {
+                int temp = walletAry[i];
+                walletAry[i] = walletAry[j];
+                walletAry[j] = temp;
+            }
+        }
+    }
+
+    printf("Here is the list of your notes\n");
+
+    printf("| Sl | \t | Note |\n");
+    for (int i = 0; i < arySize; ++i) {
+        printf("| %d | \t | %d |\n", i + 1, walletAry[i]);
+    }
+
+    showMenu();
+}
 
 // Parvez please commit your code here
-void spend() {}
+void spend() {
+    if (arySize <= 0) {
+        printf("You don't have any money to spend! \n");
+    } else {
+
+        for (int i = 0; i < arySize; ++i) {
+            for (int j = i + 1; j < arySize; ++j) {
+                if (walletAry[i] > walletAry[j]) {
+                    int temp = walletAry[i];
+                    walletAry[i] = walletAry[j];
+                    walletAry[j] = temp;
+                }
+            }
+        }
+
+        printf("Here is the list of your notes\n");
+
+        printf("| Sl | \t | Note |\n");
+        for (int i = 0; i < arySize; ++i) {
+            printf("| %d | \t | %d |\n", i + 1, walletAry[i]);
+        }
+
+        int noteSerialNumber;
+        printf("Please press the serial number of the note you want to spend: ");
+        scanf("%d", &noteSerialNumber);
+
+        for (int i = noteSerialNumber - 1; i < arySize; ++i) {
+            walletAry[i] = walletAry[i + 1];
+        }
+
+        arySize -= 1;
+
+        printf("After spending here is the list of your notes: \n");
+        printf("| Sl | \t | Note |\n");
+        for (int i = 0; i < arySize; ++i) {
+            printf("| %d | \t | %d |\n", i + 1, walletAry[i]);
+        }
+    }
+
+    showMenu();
+}
