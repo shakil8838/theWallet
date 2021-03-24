@@ -46,5 +46,8 @@ _walletAry_ which is an integer type array. After storing the value successfully
 
 If user wish to leave the program he have to press "4".
 
+<br><br>
+Project completed by -> **Md Shaki Ahmed, Md Mezbahul Kabir, Md Saif, Riaz Khan**
+
 <br><br><br><br>
 Also you can check this [link](https://docs.google.com/document/d/14yMjXaqnBzml-V5WVMRmThsbAlvFO4UXQY39rMaGPW8/edit?usp=sharing) for the Doc file.
