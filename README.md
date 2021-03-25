@@ -1,3 +1,7 @@
+# Project Documentation Link
+
+Also you can check this [link](https://docs.google.com/document/d/14yMjXaqnBzml-V5WVMRmThsbAlvFO4UXQY39rMaGPW8/edit?usp=sharing) for the Doc file.
+
 # The Wallet
 
 This is a simple C program along with Insert, Bubble short and Delete operation.
@@ -48,6 +52,3 @@ If user wish to leave the program he have to press "4".
 
 <br><br>
 Project completed by -> **Md Shaki Ahmed, Md Mezbahul Kabir, Md Saif, Riaz Khan**
-
-<br><br><br><br>
-Also you can check this [link](https://docs.google.com/document/d/14yMjXaqnBzml-V5WVMRmThsbAlvFO4UXQY39rMaGPW8/edit?usp=sharing) for the Doc file.
